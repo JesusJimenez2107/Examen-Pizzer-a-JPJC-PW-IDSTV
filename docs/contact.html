@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería Ash: contacto</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav aria-label="Principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre nosotros</a></li>
+                <li><a href="contact.html" aria-current="page">Contacto</a></li>
+                <li><a href="order.html">Ordena ahora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section aria-labelledby="datos-contacto">
+            <h2 id="datos-contacto">Datos de contacto</h2>
+
+            <h3>Nuestra dirección</h3>
+            <address>
+                C. Del Mar #46, La Paz, Baja California Sur.
+            </address>
+
+            <h3>Teléfono</h3>
+            <p>
+                <a href="tel:+526121234567">(612) 123-4567</a>
+            </p>
+
+            <h3>Correo</h3>
+            <p>
+                <a href="mailto:contacto@pizzeriaash.com">contacto@pizzeriaash.com</a>
+            </p>
+        </section>
+
+        <section aria-labelledby="form-contacto">
+            <h2 id="form-contacto">Envíanos un mensaje</h2>
+
+            <form action="/enviar-contacto" method="post" autocomplete="on" novalidate>
+
+                <label for="name">Nombre completo</label><br />
+                <input type="text" id="name" name="name" placeholder="Nombre Apellido" minlength="5" maxlength="50"
+                    size="30" required autocomplete="name" />
+                <br />
+
+                <label for="email">Correo electrónico</label><br />
+                <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com" size="30" required
+                    autocomplete="email" />
+
+                <br />
+                <label for="mensaje">Escribe tu mensaje</label><br />
+                <textarea id="mensaje" name="mensaje" rows="6" cols="30" placeholder="Cuéntanos tu duda…" minlength="10"
+                    maxlength="500" required></textarea>
+
+                <br />
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="Mapa">
+            <h2>¿Dónde nos encontramos?</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1250.315129643521!2d-110.3014309520052!3d24.067383258404735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86afcd65d49f62bd%3A0x5ffe535d8d0a805b!2sC.%20del%20Mar%2046%2C%20La%20Fuente%2C%2023088%20La%20Paz%2C%20B.C.S.!5e0!3m2!1ses-419!2smx!4v1758105450566!5m2!1ses-419!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+    </main>
+
+    <footer id="footer">
+        <h5>© 2025 Pizzería Ash</h5>
+    </footer>
+
+</body>
+
+</html>
