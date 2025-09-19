@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería Ash: Ordena ahora</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ordena ahora</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="order.html">Ordena ahora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="Menu_p">
+            <h2>Menu</h2>
+            <table border="1">
+                <tr>
+                    <th>Pizza</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td><a href="Charizard.html">Charizard Flama</a></td>
+                    <td>$180.00</td>
+                </tr>
+                <tr>
+                    <td><a href="Bulbasaur.html">Bulbasaur Verde Vital</a></td>
+                    <td>$160.00</td>
+                </tr>
+                <tr>
+                    <td><a href="Gyarados.html">Gyarados del Mar</a></td>
+                    <td>$200.00</td>
+                </tr>
+                <tr>
+                    <td><a href="Pikachu.html">Pikachu Eléctrica</a></td>
+                    <td>$160.00</td>
+                </tr>
+            </table>
+        </section>
+
+        <section aria-labelledby="form-orden">
+            <h2 id="form-orden">Formulario de pedido</h2>
+
+            <form action="/enviar-orden" method="post" autocomplete="on" novalidate>
+
+                <label for="name">Nombre completo</label><br />
+                <input type="text" id="name" name="name" placeholder="Nombres Apellidos" minlength="5" maxlength="100"
+                    size="30" required autocomplete="name" />
+                <br />
+                <br>
+
+                <label for="dirección">Dirección</label><br />
+                <input type="text" id="dirección" name="dirección" placeholder="Tu calle #casa" size="30" required
+                    autocomplete="dirección" />
+                <br />
+                <br>
+
+                <label for="pizza">Elige tu pizza:</label><br>
+                <select id="pizza" name="pizza" required>
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="charizard">Charizard Flama</option>
+                    <option value="bulbasaur">Bulbasaur Verde Vital</option>
+                    <option value="gyarados">Gyarados del Mar</option>
+                    <option value="pikachu">Pikachu Eléctrica</option>
+                </select>
+                <br />
+                <br>
+
+                <label>Elige el tamaño de tu pizza</label> <br>
+
+                <input type="radio" id="chica" name="tamano" value="chica" required>
+                <label for="chica">Chica (25 cm)</label><br>
+
+                <input type="radio" id="mediana" name="tamano" value="mediana">
+                <label for="mediana">Mediana (30 cm)</label><br>
+
+                <input type="radio" id="grande" name="tamano" value="grande">
+                <label for="grande">Grande (35 cm)</label><br>
+
+                <input type="radio" id="familiar" name="tamano" value="familiar">
+                <label for="familiar">Familiar (45 cm)</label>
+                <br>
+                <br>
+
+                <label>Ingrediente extra</label> <br>
+
+                <input type="checkbox" id="queso_extra" name="ingrediente_e" value="queso_extra">
+                <label>Queso extra</label><br>
+
+                <input type="checkbox" id="peperoni" name="ingrediente_e" value="peperoni">
+                <label>Peperoni</label><br>
+
+                <input type="checkbox" id="champiñones" name="ingrediente_e" value="champiñones">
+                <label>Champiñones</label><br>
+
+                <input type="checkbox" id="jamon" name="ingrediente_e" value="jamon">
+                <label>Jamon</label><br>
+
+                <br>
+
+                <label for="cantidad">Cantidad:</label> <br>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1" required>
+                <br>
+
+                <br />
+                <label for="mensaje">Comentario extra</label><br />
+                <textarea id="mensaje" name="mensaje" rows="6" cols="30" minlength="1"
+                    maxlength="500"></textarea>
+
+                <br />
+                <br>
+                <button type="submit">Enviar pedido</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <h5>© 2025 Pizzería Ash</h5>
+    </footer>
+
+</body>
+
+</html>
